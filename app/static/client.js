@@ -27,11 +27,15 @@ function analyze() {
             $('#exampleModal').modal('show');
             if(`${response['result']}` == 'knights') {
                 el('result-label').innerHTML = `Vegas Golden Knight!`;
-                showPicked();
+                var $imgresult = $('image-picked').clone();
+                $('result-img').html($imgresult);
+                
             }
             else if(`${response['result']}` == 'notknights'){
                 el('result-label').innerHTML = `Not a Vegas Golden Knight!`; 
-                showPicked(); 
+                var $imgresult = $('image-picked').clone();
+                $('result-img').html($imgresult);
+                 
             }
         }
         el('analyze-button').innerHTML = '🕵️ Examine';
