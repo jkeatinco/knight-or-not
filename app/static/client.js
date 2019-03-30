@@ -27,13 +27,23 @@ function analyze() {
             $('#exampleModal').modal('show');
             if(`${response['result']}` == 'knights') {
                 el('result-label').innerHTML = `Vegas Golden Knight!`;
+<<<<<<< HEAD
                 $('#image-picked').clone().innerHTML('#result-img');
                 
+=======
+                var $imgresult = $('image-picked').clone();
+                $('result-img').html($imgresult);
+>>>>>>> parent of 0b1f6da... clone attempt 2
                 
             }
             else if(`${response['result']}` == 'notknights'){
                 el('result-label').innerHTML = `Not a Vegas Golden Knight!`; 
+<<<<<<< HEAD
                 $('#image-picked').clone().innerHTML('#result-img');
+=======
+                var $imgresult = $('image-picked').clone();
+                $('result-img').html($imgresult);
+>>>>>>> parent of 0b1f6da... clone attempt 2
                  
             }
         }
