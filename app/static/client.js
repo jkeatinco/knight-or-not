@@ -27,18 +27,14 @@ function analyze() {
             $('#exampleModal').modal('show');
             if(`${response['result']}` == 'knights') {
                 el('result-label').innerHTML = `Vegas Golden Knight!`;
-
                 
-                $('#image-picked').clone().appendTo('#result-img')
+                $('#image-picked').clone().appendTo('#result-img');
 
                 
             }
             else if(`${response['result']}` == 'notknights'){
                 el('result-label').innerHTML = `Not a Vegas Golden Knight!`; 
 
-              
-
-              
                 $('#image-picked').clone().appendTo('#result-img')
                 
 

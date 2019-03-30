@@ -39,7 +39,7 @@
                     <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Vegas Golden KnAIght thinks this is....</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -52,8 +52,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class='choose-file-button' data-dismiss="modal">👎 Nope! Sorry KnAIght.</button>
-                        <button type="button" class='analyze-button' data-dismiss="modal">👍 Yup! You are a genius KnAIght.</button>
+                        <button id="nopeBtn" type="button" class='choose-file-button' data-dismiss="modal">👎 Nope! Sorry KnAIght.</button>
+                        <button id="yupBtn" type="button" class='analyze-button' data-dismiss="modal">👍 Yup! You are a genius KnAIght.</button>
                     </div>
                     </div>
                 </div>
@@ -68,6 +68,15 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
 $('#exampleModal').modal({ show: false})
+$('#closeBtn').on('click', function(){
+    $(this).closest("#image-picked").remove();
+});
+$('#yupBtn').on('click', function(){
+    $(this).closest("#image-picke").remove();
+});
+$('#nopeBtn').on('click', function(){
+    $(this).closest("#image-picke").remove();
+});
 </script>
 </body>
 </html>
