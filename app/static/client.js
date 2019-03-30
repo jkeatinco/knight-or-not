@@ -28,10 +28,7 @@ function analyze() {
             if(`${response['result']}` == 'knights') {
                 el('result-label').innerHTML = `Vegas Golden Knight!`;
 
-                $('#image-picked').clone().innerHTML('#result-img');
                 
-
-                var $imgresult = $('image-picked').clone();
                 $('#image-picked').clone().appendTo('#result-img')
 
                 
@@ -39,10 +36,11 @@ function analyze() {
             else if(`${response['result']}` == 'notknights'){
                 el('result-label').innerHTML = `Not a Vegas Golden Knight!`; 
 
-                $('#image-picked').clone().innerHTML('#result-img');
+              
 
-                var $imgresult = $('image-picked').clone();
+              
                 $('#image-picked').clone().appendTo('#result-img')
+                
 
                  
             }
