@@ -68,14 +68,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
 $('#exampleModal').modal({ show: false})
-$('#closeBtn').on('click', function(){
-    $('#result-img img').remove();
+
+
+$( "#closeBtn" ).click(function() {
+  $( "#image-picked" ).remove();
 });
-$('#yupBtn').on('click', function(){
-    $('#result-img img').remove();
+
+$( "#yupBtn" ).click(function() {
+  $( "image-picked" ).remove();
 });
-$('#nopeBtn').on('click', function(){
-    $('#result-img img').remove();
+
+$( "#nopeBtn" ).click(function() {
+  $( "image-picked" ).remove();
 });
 </script>
 </body>
