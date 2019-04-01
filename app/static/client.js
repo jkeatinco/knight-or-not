@@ -25,14 +25,14 @@ function analyze() {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
             $('#exampleModal').modal('show');
-            if(`${response['result']}` == 'knights') {
+            if(`${response['result']}` == 'goldenknights') {
                 el('result-label').innerHTML = `Vegas Golden Knight!`;
                 
                 $('#image-picked').clone().appendTo('#result-img');
 
                 
             }
-            else if(`${response['result']}` == 'notknights'){
+            else if(`${response['result']}` == 'notgoldenknights'){
                 el('result-label').innerHTML = `Not a Vegas Golden Knight!`; 
 
                 $('#image-picked').clone().appendTo('#result-img')
