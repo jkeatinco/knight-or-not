@@ -46,7 +46,7 @@
                     <div class="modal-body">
                         <div class='result-label'>
                             <h2 id='result-label'></h2>
-                            <div id='result-img'>
+                            <div id='result-img' class="img-class">
                                 
                             </div>
                         </div>
@@ -71,15 +71,15 @@ $('#exampleModal').modal({ show: false})
 
 
 $( "#closeBtn" ).click(function() {
-  $( ".special-img" ).remove();
+  $( "div.img-class img" ).remove();
 });
 
 $( "#yupBtn" ).click(function() {
-  $( ".special-img" ).remove();
+  $( "div.img-class img" ).remove();
 });
 
 $( "#nopeBtn" ).click(function() {
-  $( ".special-img" ).remove();
+  $( "div.img-class img" ).remove();
 });
 </script>
 </body>
