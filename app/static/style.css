@@ -1,5 +1,6 @@
 body {
-    background-color: #fff;
+    background-color: #000;
+    color:#fff;
 }
 
 .no-display {
@@ -19,7 +20,15 @@ body {
     font-size: 30px;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #262626;
+    color: #fff;
+}
+
+.golden-gold {
+    color:#B4975A;
+}
+
+.shark-teal {
+    color:#006D75;
 }
 
 .content {
@@ -46,17 +55,17 @@ button.choose-file-button {
   height: 40px;
   border-radius: 2px;
   background-color: #ffffff;
-  border: solid 1px #7052CB;
+  border: solid 1px #B4975A;
   font-size: 13px;
-  color: #7052CB;
+  color: #B4975A;
 }
 
 button.analyze-button {
     width: 200px;
     height: 40px;
-    border: solid 1px #7052CB;
+    border: solid 1px #B4975A;
     border-radius: 2px;
-    background-color: #7052CB;
+    background-color: #B4975A;
     font-size: 13px;
     color: #ffffff;
 }
