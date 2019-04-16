@@ -77,3 +77,12 @@ button:focus {outline:0;}
     display:inline-block;
     padding:5px;
 }
+
+.modal-content {
+    background-color:#000;
+    border: 1px solid white;
+}
+
+button.close {
+    color:white;
+}
