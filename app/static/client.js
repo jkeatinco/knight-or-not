@@ -26,7 +26,23 @@ function analyze() {
             var response = JSON.parse(e.target.responseText);
             $('#exampleModal').modal('show');
             if(`${response['result']}` == 'knights') {
-                el('result-label').innerHTML = `Vegas Golden Knight!`;
+
+
+                idArray = new Array()
+                idArray [1] = "First paragraph text"
+                idArray [2] = "Second paragraph text"
+                idArray [3] = "Third paragraph text"
+                idArray [4] = "Fourth paragraph text"
+                idArray [5] = "Fifth paragraph text"
+
+                randomParagraph = Math.floor(Math.random()*5);
+
+                document.getElementById("result-label").innerHTML = idArray[randomParagraph + 1];   
+
+                /*el('result-label').innerHTML = `Vegas Golden Knight!`;*/
+
+
+
                 
                 $('#image-picked').clone().appendTo('#result-img');
 
