@@ -52,6 +52,7 @@
                                 
                             </div>
                             <br>
+                            <a id="download" download="triangle.png"></a>
                             <a data-html2canvas-ignore id="screenShot" class='btn btn-light' href="#"><i class="fas fa-mobile-alt"></i> Screen Shot</a>
 							<a data-html2canvas-ignore class='btn btn-light' href="https://www.facebook.com/sharer/sharer.php?u=https://knight-or-not.onrender.com/"><i class="fab fa-facebook-f"></i> Share</a>
 							<a data-html2canvas-ignore class='btn btn-light' href="https://twitter.com/intent/tweet?url=https://knight-or-not.onrender.com/&text=Vegas%20Golden%20KnAIght!&hashtags=vegasborn,goldenknights,AI"><i class="fab fa-twitter"></i> Tweet</a>
@@ -93,8 +94,11 @@ $( "#screenShot" ).click(function() {
  
 
 html2canvas(document.querySelector(".modal-body")).then(canvas => {
-    document.body.download(canvas)
-    
+    document.body.appendChild(canvas)
+    var download = document.getElementById("download");
+    var image = document.getElementById("canvas").toDataURL("image/png")
+    .replace("image/png", "image/octet-stream");
+    download.setAttribute("href", image);   
 });
 
 
