@@ -3,6 +3,14 @@ body {
     color:#fff;
 }
 
+a {
+    color:#B4975A;
+}
+
+a:hover {
+    color:rgb(236, 198, 115);
+}
+
 .no-display {
     display: none;
 }
