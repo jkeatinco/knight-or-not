@@ -41,8 +41,8 @@
                     <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><span class="golden-gold">Vegas Golden KnAIght</span> thinks this is....</h5>
-                        <button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <button data-html2canvas-ignore id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span data-html2canvas-ignore aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
@@ -91,13 +91,15 @@ $( "#nopeBtn" ).click(function() {
 
 function screenshot(){
  
-    html2canvas(document.querySelector(".modal-body")).then(canvas => {
+    html2canvas(document.querySelector(".modal-dialog")).then(canvas => {
         document.body.appendChild(canvas);
         var a = document.createElement('a');
         document.body.appendChild(a);
         a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
         a.download = 'image.jpg';
         a.click();
+        document.body.removeChild(link);
+        document.body.removeChild(canvas);
     });
 }
 

@@ -6,6 +6,15 @@ body {
 a {
     color:#B4975A;
 }
+.modal-dialog {
+    background-color:#000;
+}
+.modal-content {
+    background-color:#000;
+}
+.modal-header {
+    background-color:#000;
+}
 .modal-body {
     background-color:#000;
 }
