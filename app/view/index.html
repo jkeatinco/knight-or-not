@@ -52,7 +52,7 @@
                                 
                             </div>
                             <br>
-                            <a data-html2canvas-ignore id="screenShot" class='btn btn-light' href="#"><i class="fas fa-mobile-alt"></i> Screen Shot</a>
+                            <a data-html2canvas-ignore id="screenShot" onclick='screenshot();' class='btn btn-light' href="#"><i class="fas fa-mobile-alt"></i> Screen Shot</a>
 							<a data-html2canvas-ignore class='btn btn-light' href="https://www.facebook.com/sharer/sharer.php?u=https://knight-or-not.onrender.com/"><i class="fab fa-facebook-f"></i> Share</a>
 							<a data-html2canvas-ignore class='btn btn-light' href="https://twitter.com/intent/tweet?url=https://knight-or-not.onrender.com/&text=Vegas%20Golden%20KnAIght!&hashtags=vegasborn,goldenknights,AI"><i class="fab fa-twitter"></i> Tweet</a>
                         </div>
@@ -89,16 +89,17 @@ $( "#nopeBtn" ).click(function() {
 });
 
 
-$( "#screenShot" ).click(function() {
+function screenshot(){
  
-    html2canvas(document.querySelector(".modal-body", options = {backgroundColor:black})).then(canvas => {
+    html2canvas(document.querySelector(".modal-body")).then(canvas => {
         document.body.appendChild(canvas);
         var a = document.createElement('a');
         a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
         a.download = 'image.jpg';
         a.click();
     });
-});
+}
+
 
 </script>
 </body>
