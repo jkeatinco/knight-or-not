@@ -6,6 +6,12 @@ body {
 a {
     color:#B4975A;
 }
+.modal-body {
+    background-color:#000;
+}
+.result-label {
+    background-color:#000;
+}
 
 canvas {
     background-color:#000;

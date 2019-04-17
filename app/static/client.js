@@ -38,7 +38,7 @@ function analyze() {
 
                 randomParagraph = Math.floor(Math.random()*5);
 
-                document.getElementById("result-label").innerHTML = idArray[randomParagraph];   
+                el('result-label').innerHTML = idArray[randomParagraph];   
 
                 /*el('result-label').innerHTML = `Vegas Golden Knight!`;*/
 
@@ -52,15 +52,15 @@ function analyze() {
             else if(`${response['result']}` == 'sharks'){
                 idArray = new Array()
                 idArray [0] = "Minnows"
-                idArray [1] = "Fish Tank"
-                idArray [2] = "Goldfish"
-                idArray [3] = "Guppy"
-                idArray [4] = "Catfish"
-                idArray [5] = "Midget Dwarfgoby"
+                idArray [1] = "A Fish Tank"
+                idArray [2] = "A Goldfish"
+                idArray [3] = "A Guppy"
+                idArray [4] = "A Catfish"
+                idArray [5] = "A Midget Dwarfgoby"
 
                 randomParagraph = Math.floor(Math.random()*5);
 
-                document.getElementById("result-label").innerHTML = idArray[randomParagraph];  
+                el('result-label').innerHTML = idArray[randomParagraph];  
 
                 /*el('result-label').innerHTML = `Minnows!`;*/ 
 
