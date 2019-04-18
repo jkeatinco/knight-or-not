@@ -104,7 +104,7 @@ function screenshot(){
         document.body.removeChild(canvas);*/
 
         // force client download of svg as png image
-        ReImg.fromSvg(document.getElementById('canvasimg')).downloadPng();
+        ReImg.fromCanvas(document.getElementById('canvasimg')).downloadPng();
 
         /*var link = document.createElement('a');
         link.download = 'filename.png';
