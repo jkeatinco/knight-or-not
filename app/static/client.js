@@ -24,7 +24,10 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            $('#exampleModal').modal('show');
+            $('#exampleModal').modal('show', {
+                backdrop: 'static',
+                keyboard: false
+            });
             if(`${response['result']}` == 'knights') {
 
 
