@@ -89,6 +89,15 @@ $( "#nopeBtn" ).click(function() {
   $( "div.img-class img" ).remove();
 });
 
+$(document).ready(function(){
+	$('#MybtnModalPreventScript').click(function(){
+  		$('#exampleModal').modal({
+    		backdrop: 'static',
+    		keyboard: false
+		});
+	});
+});
+
 
 function screenshot(){
  

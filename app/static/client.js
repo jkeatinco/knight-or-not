@@ -45,16 +45,19 @@ function analyze() {
                 
                 $('#image-picked').clone().appendTo('#result-img');
 
+                $( "#image-picked" ).removeClass( "special-img-teal" ).addClass( "special-img" );
+                $("#result-label" ).removeClass( "result-label-teal" ).addClass( "result-label-gold" );
+
                 
             }
             else if(`${response['result']}` == 'sharks'){
                 idArray = new Array()
-                idArray [0] = "Minnows"
-                idArray [1] = "Fish Tank"
-                idArray [2] = "Goldfish"
-                idArray [3] = "Guppy"
-                idArray [4] = "Catfish"
-                idArray [5] = "Midget Dwarfgoby"
+                idArray [0] = "🦈 Minnows"
+                idArray [1] = "🦈 Fish Tank"
+                idArray [2] = "🦈 Goldfish"
+                idArray [3] = "🦈 Guppy"
+                idArray [4] = "🦈 Catfish"
+                idArray [5] = "🦈 Midget Dwarfgoby"
 
                 randomParagraph = Math.floor(Math.random()*5);
 
@@ -64,6 +67,8 @@ function analyze() {
 
                 $('#image-picked').clone().appendTo('#result-img')
                 
+                $("#image-picked" ).removeClass( "special-img" ).addClass( "special-img-teal" );
+                $("#result-label" ).removeClass( "result-label-gold" ).addClass( "result-label-teal" );
 
                  
             }

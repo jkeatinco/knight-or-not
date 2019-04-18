@@ -122,6 +122,14 @@ button.close {
     border: 4px solid #B4975A;
 }
 
-#result-label {
+.result-label-gold {
     color: #B4975A;
+}
+
+.special-img-teal {
+    border: 4px solid #006D75;
+}
+
+.result-label-teal {
+    color: #006D75;
 }
