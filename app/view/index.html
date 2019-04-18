@@ -93,6 +93,7 @@ function screenshot(){
  
     html2canvas(document.querySelector(".modal-dialog")).then(canvas => {
         document.body.appendChild(canvas);
+        canvas.id = "canvasimg";
         /*var a = document.createElement('a');
         document.body.appendChild(a);
         a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
@@ -103,7 +104,7 @@ function screenshot(){
 
         var link = document.createElement('a');
         link.download = 'filename.png';
-        link.href = document.getElementById('canvas').toDataURL()
+        link.href = document.getElementById('canvasimg').toDataURL()
         link.click();
     });
 }
