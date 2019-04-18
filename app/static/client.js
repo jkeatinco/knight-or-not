@@ -45,7 +45,7 @@ function analyze() {
                 
                 $('#image-picked').clone().appendTo('#result-img');
 
-                $( "#image-picked" ).removeClass( "special-img-teal" ).addClass( "special-img" );
+                $( ".special-img" ).removeClass( "special-img-teal" ).addClass( "special-img-gold" );
                 $("#result-label" ).removeClass( "result-label-teal" ).addClass( "result-label-gold" );
 
                 
@@ -67,7 +67,7 @@ function analyze() {
 
                 $('#image-picked').clone().appendTo('#result-img')
                 
-                $("#image-picked" ).removeClass( "special-img" ).addClass( "special-img-teal" );
+                $(".special-img" ).removeClass( "special-img-gold" ).addClass( "special-img-teal" );
                 $("#result-label" ).removeClass( "result-label-gold" ).addClass( "result-label-teal" );
 
                  
