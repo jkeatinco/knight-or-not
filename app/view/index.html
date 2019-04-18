@@ -41,7 +41,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><span class="golden-gold">Vegas Golden KnAIght</span> thinks this is....</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"><span class="golden-gold">Vegas Golden KnAIght</span> predicts...</h5>
                         <button data-html2canvas-ignore id="closeBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span data-html2canvas-ignore aria-hidden="true">&times;</span>
                         </button>
@@ -105,6 +105,7 @@ function screenshot(){
 
         // force client download of svg as png image
         ReImg.fromCanvas(document.getElementById('canvasimg')).downloadPng();
+        document.body.removeChild(canvas);
 
         /*var link = document.createElement('a');
         link.download = 'filename.png';

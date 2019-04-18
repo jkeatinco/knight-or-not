@@ -38,11 +38,9 @@ function analyze() {
 
                 randomParagraph = Math.floor(Math.random()*5);
 
-                el('result-label').innerHTML = idArray[randomParagraph];   
+                el('result-label').innerHTML = "<img class=\"knights-logo\" src=\"../static/img/Vegas_Golden_Knights_logo.svg\">" + idArray[randomParagraph];   
 
                 /*el('result-label').innerHTML = `Vegas Golden Knight!`;*/
-
-
 
                 
                 $('#image-picked').clone().appendTo('#result-img');
@@ -52,11 +50,11 @@ function analyze() {
             else if(`${response['result']}` == 'sharks'){
                 idArray = new Array()
                 idArray [0] = "Minnows"
-                idArray [1] = "A Fish Tank"
-                idArray [2] = "A Goldfish"
-                idArray [3] = "A Guppy"
-                idArray [4] = "A Catfish"
-                idArray [5] = "A Midget Dwarfgoby"
+                idArray [1] = "Fish Tank"
+                idArray [2] = "Goldfish"
+                idArray [3] = "Guppy"
+                idArray [4] = "Catfish"
+                idArray [5] = "Midget Dwarfgoby"
 
                 randomParagraph = Math.floor(Math.random()*5);
 

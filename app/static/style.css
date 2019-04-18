@@ -117,3 +117,11 @@ button:focus {outline:0;}
 button.close {
     color:white;
 }
+
+.special-img {
+    border: 4px solid #B4975A;
+}
+
+#result-label {
+    color: #B4975A;
+}
