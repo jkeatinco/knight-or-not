@@ -133,3 +133,7 @@ button.close {
 .result-label-teal {
     color: #006D75;
 }
+
+.special-img {
+    max-width:100%;
+}
