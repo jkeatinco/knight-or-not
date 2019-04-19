@@ -33,11 +33,11 @@ function analyze() {
 
                 idArray = new Array()
                 idArray [0] = "Vegas Born!"
-                idArray [1] = "Knight Time!"
+                idArray [1] = "Go Knights Go!"
                 idArray [2] = "Vegas Strong!"
                 idArray [3] = "Knight Up!"
                 idArray [4] = "Vegas Golden Knights!"
-                idArray [5] = "Where the Impossible Happens!"
+                idArray [5] = "VGK Worldwide!"
 
                 randomParagraph = Math.floor(Math.random()*5);
 
@@ -55,12 +55,12 @@ function analyze() {
             }
             else if(`${response['result']}` == 'sharks'){
                 idArray = new Array()
-                idArray [0] = "🦈 Minnows"
-                idArray [1] = "🦈 Fish Tank"
-                idArray [2] = "🦈 Goldfish"
-                idArray [3] = "🦈 Guppy"
-                idArray [4] = "🦈 Catfish"
-                idArray [5] = "🦈 Midget Dwarfgoby"
+                idArray [0] = "🐟 Minnows"
+                idArray [1] = "🦈 Goblin Shark"
+                idArray [2] = "🐟 Sardines"
+                idArray [3] = "🍣 Sushi"
+                idArray [4] = "🐡 Blowfish"
+                idArray [5] = "🐟 Midget Dwarfgoby"
 
                 randomParagraph = Math.floor(Math.random()*5);
 
