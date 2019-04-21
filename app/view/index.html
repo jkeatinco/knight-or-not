@@ -10,7 +10,7 @@
     <script src='../static/html2canvas.js'></script>
     <script src="../static/reimg.js"></script>
     <script src="../static/exif.js"></script>
-    <script src="../static/rotate.js"></script>
+    
 
     <style>
         .rotate90 {
@@ -131,7 +131,20 @@ function screenshot(){
         document.body.removeChild(link);
         document.body.removeChild(canvas);*/
 
-        
+        window.onload=getExif;
+            var newimg = document.getElementById('image-picked');
+            function getExif() {
+                EXIF.getData(newimg, function() {
+                        var orientation = EXIF.getTag(this, "Orientation");
+                        if(orientation == 6) {
+                            newimg.className = "camview rotate90";
+                        } else if(orientation == 8) {
+                            newimg.className = "camview rotate270";
+                        } else if(orientation == 3) {
+                            newimg.className = "camview rotate180";
+                        }
+                    });
+            };
 
         // force client download of svg as png image
         ReImg.fromCanvas(document.getElementById('canvasimg')).downloadPng();
