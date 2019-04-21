@@ -94,7 +94,7 @@ $( "#nopeBtn" ).click(function() {
 
 
 function screenshot(){
-    var img1 = document.querySelector(".special-img"); 
+    var img1 = document.getElementById("newimage-picked"); 
     EXIF.getData(img1, function() {
                 var orientation = EXIF.getTag(this, "Orientation");
 
