@@ -99,7 +99,8 @@ function screenshot(){
                 var orientation = EXIF.getTag(this, "Orientation");
 
                 if(orientation == 6)
-                    $(img1).css('transform', 'rotate(90deg)')
+                    $(img1).css('transform', 'rotate(90deg)');
+                    $(img1).css('height', '800px')
 });  
  
     html2canvas(document.querySelector(".modal-dialog")).then(canvas => {
