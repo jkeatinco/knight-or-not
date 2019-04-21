@@ -10,7 +10,31 @@
     <script src='../static/html2canvas.js'></script>
     <script src="../static/reimg.js"></script>
     <script src="../static/exif.js"></script>
-    <script src="https://codepo8.github.io/image-data-cleaner/scripts/exif.js"></script>
+    <script src="../static/rotate.js"></script>
+
+    <style>
+        .rotate90 {
+         -webkit-transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+         transform: rotate(90deg);
+        }
+        .rotate180 {
+         -webkit-transform: rotate(180deg);
+         -moz-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+         -ms-transform: rotate(180deg);
+         transform: rotate(180deg);
+        }
+        .rotate270 {
+         -webkit-transform: rotate(270deg);
+         -moz-transform: rotate(270deg);
+         -o-transform: rotate(270deg);
+         -ms-transform: rotate(270deg);
+         transform: rotate(270deg);
+        }
+      </style>
 
 </head>
 <body>
@@ -53,7 +77,6 @@
                         <div class='result-label'>
                             <h2 id='result-label'></h2>
                             <div id='result-img' class="img-class">
-                                <img id="img-out"/>
                             </div>
                             <br>
                             <a data-html2canvas-ignore id="screenShot" onclick='screenshot();' class='btn btn-light' href="#"><i class="fas fa-file-download"></i> Save Image</a><br><br>
