@@ -51,7 +51,7 @@
                     <div class="modal-body">
                         <div class='result-label'>
                             <h2 id='result-label'></h2>
-                            <div id='result-img' class="img-class">
+                            <div id='result-img' class="img-class" style="width:100%;">
                             </div>
                             <br>
                             <a data-html2canvas-ignore id="screenShot" onclick='screenshot();' class='btn btn-light' href="#"><i class="fas fa-file-download"></i> Save Image</a><br><br>
@@ -112,7 +112,7 @@ function screenshot(){
         a.click();
         document.body.removeChild(link);
         document.body.removeChild(canvas);*/
-
+        document.body.removeChild(canvas);
         
         // force client download of svg as png image
        ReImg.fromCanvas(document.getElementById('canvasimg')).downloadPng();
