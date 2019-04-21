@@ -10,6 +10,7 @@
     <script src='../static/html2canvas.js'></script>
     <script src="../static/reimg.js"></script>
     <script src="../static/exif.js"></script>
+    <script src="../static/load-image.all.min.js"></script>
 
 </head>
 <body>
@@ -100,7 +101,7 @@ function screenshot(){
 
                 if(orientation == 6)
                     $(img1).css('transform', 'rotate(90deg)');
-                    $(img1).css('height', '800px')
+                    
 });  
  
     html2canvas(document.querySelector(".modal-dialog")).then(canvas => {
