@@ -120,6 +120,7 @@ button.close {
 
 .special-img-gold {
     border: 4px solid #B4975A;
+    image-orientation: 90deg;
 }
 
 .result-label-gold {
@@ -128,6 +129,7 @@ button.close {
 
 .special-img-teal {
     border: 4px solid #006D75;
+    image-orientation: 90deg;
 }
 
 .result-label-teal {
