@@ -28,7 +28,7 @@
                        type='file'
                        name='file'
                        accept='image/*'
-                      >
+                       onchange='showPicked(this)'>
             </div>
             <button class='choose-file-button' type='button' onclick='showPicker()'>📷 Take Photo</button>
             <div class='analyze' style="padding-bottom:30px;">
@@ -130,17 +130,6 @@ function screenshot(){
         link.click();*/
     });
 }
-
-document.getElementById('file-input').onchange = function (e) {
-    var loadingImage = loadImage(
-        e.target.files[0],
-        function (img) {
-            document.body.appendChild(img);
-        },
-        {maxWidth: 600}
-    );
-    loadingImage.onload = loadingImage.onerror = null;
-};
 
 
 </script>
