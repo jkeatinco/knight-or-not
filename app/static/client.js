@@ -4,22 +4,15 @@ function showPicker(inputId) { el('file-input').click(); }
 
 
 
-function showPicked(input) {
+/*function showPicked(input) {
     el('upload-label').innerHTML = input.files[0].name;
     var reader = new FileReader();
     reader.onload = function (e) {
-        loadImage(
-            e.target.files[0],
-            function (img) {
-                document.body.appendChild(img);
-            },
-            {maxWidth: 600} // Options
-        );
         el('image-picked').src = e.target.result;
         el('image-picked').className = 'special-img';
     }
     reader.readAsDataURL(input.files[0]);
-}
+}*/
 
 function analyze() {
     var uploadFiles = el('file-input').files;
